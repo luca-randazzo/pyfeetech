@@ -1,37 +1,32 @@
 # pyfeetech
 
 ## Overview
-`pyfeetech` is a Python library designed to provide advanced functionalities for feet technology applications. This library aims to simplify the development process by offering a set of tools and utilities.
+`pyfeetech` is a Python library to control Feetech servomotors
+The lib is forked from Waveshare code, downloadable at: https://www.waveshare.com/wiki/Bus_Servo_Adapter_(A) 
+
+## Hardware requirements
+- Waveshare Bus Servo Adapter (A)
+- Feetech servomotor (e.g. STS3215)
+- 12 V, 5 A power supply
 
 ## Installation
-You can install the `pyfeetech` library using pip. Run the following command in your terminal:
+Run the following command in your terminal:
 
 ```
-python3 -m venv venv
-source venv/bin/activate
-#pip install pyfeetech
 pip install -e .
+```
 
+## Un-install
+If you need to un-install, run:
+
+```
 pip uninstall pyfeetech
 ```
 
 ## Usage
-Here is a simple example of how to use `pyfeetech` in your project:
-
-```python
-from pyfeetech import some_function
-
-result = some_function(parameters)
-print(result)
-```
-
-## Features
-- Feature 1: Description of feature 1.
-- Feature 2: Description of feature 2.
-- Feature 3: Description of feature 3.
-
-## Contributing
-Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for more information on how to contribute to this project.
+Use the following example files as starting point:
+- 1_simple.py
+- 2_advanced.py
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
