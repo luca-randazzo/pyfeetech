@@ -43,8 +43,8 @@ pip uninstall pyfeetech
 
 ## Usage
 Use the following example files as starting point:
-- 1_simple.py
-- 2_advanced.py
+- examples/1_simple.py
+- examples/2_advanced.py
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
