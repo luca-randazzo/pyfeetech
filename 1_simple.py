@@ -2,9 +2,9 @@
 # file allows to test pyfeetech library
 # simple functionalities
 
-# -----------------------------------------------
+# ----------------------------------------------------------------------------------------------
 # imports
-# -----------------------------------------------
+# ----------------------------------------------------------------------------------------------
 from pyfeetech import * # pyfeetech library
 
 
@@ -12,7 +12,7 @@ from pyfeetech import * # pyfeetech library
 # variables
 # ----------------------------------------------------------------------------------------------
 # Default setting
-STS_ID          = 1                 # ID
+STS_ID          = 3                 # ID
 STS_BAUDRATE    = 1000000           # default baudrate : 1000000
 STS_PORT        = '/dev/ttyACM0'    # e.g.: Windows: "COM1", Linux: "/dev/ttyUSB0"
 
@@ -50,7 +50,6 @@ if __name__ == "__main__":
     print("[__main__] Press 'Ctrl+C' to exit this program")
     try:
         while True:
-            print(".")
             print(
                 f"position: {bus.get_position(STS_ID):5d}, "
                 f"speed: {bus.get_speed(STS_ID):4d}, "

@@ -16,6 +16,24 @@ Run the following command in your terminal:
 pip install -e .
 ```
 
+### Setup permissions for serial port
+#### Option 1
+```
+sudo usermod -a -G dialout $USER
+```
+USER will need to log out & log back in again for this to take effect
+
+#### Option 2
+```
+sudo adduser $USER dialout
+```
+USER will need to log out & log back in again for this to take effect
+
+#### Option 3
+```
+sudo chmod 666 /dev/ttyACM0
+```
+
 ## Un-install
 If you need to un-install, run:
 
