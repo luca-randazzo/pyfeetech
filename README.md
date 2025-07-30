@@ -11,7 +11,7 @@ The lib is forked from Waveshare code, downloadable at: https://www.waveshare.co
 - 12 V, 2+ A power supply
 
 ### Software
-The library has been tested under Ubuntu 22.04.5 LTS running Pyhton 3.12.
+The library has been tested under Ubuntu 22.04.5 LTS running Pyhton 3.12
 
 ## Installation
 - Download the repo from: https://github.com/luca-randazzo/pyfeetech 
