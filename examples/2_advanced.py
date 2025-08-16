@@ -159,8 +159,8 @@ if __name__ == "__main__":
     #print(f"[__main__] torque enable:         {bus.get_torque_enable(STS_ID):04d}")
 
     # - set speed and acceleration
-    bus.sram_set_speed(STS_ID, 254)
-    bus.sram_set_acceleration(STS_ID, 254)
+    #bus.sram_set_speed(STS_ID, 254)
+    #bus.sram_set_acceleration(STS_ID, 254)
 
     # - set torque limit
     #bus.sram_set_torque_limit(STS_ID, 500)
