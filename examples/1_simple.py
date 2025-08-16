@@ -43,7 +43,7 @@ if __name__ == "__main__":
         quit()
 
     # - deactivate torque
-    bus.set_torque(STS_ID, 0)
+    bus.sram_set_torque_enable(STS_ID, 0)
     print("[__main__] Torque deactivated. Move the servomotor, and see its status change")
     
     # - loop
@@ -65,7 +65,7 @@ if __name__ == "__main__":
 
     finally:
         # - deactivate torque
-        bus.set_torque(STS_ID, 0)
+        bus.sram_set_torque_enable(STS_ID, 0)
         
         # - close connection
         portHandler.closePort()
