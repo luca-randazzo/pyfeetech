@@ -159,8 +159,8 @@ if __name__ == "__main__":
     #print(f"[__main__] torque enable:         {bus.get_torque_enable(STS_ID):04d}")
 
     # - set speed and acceleration
-    bus.sram_set_speed(STS_ID, 254)
-    bus.sram_set_acceleration(STS_ID, 254)
+    #bus.sram_set_speed(STS_ID, 254)
+    #bus.sram_set_acceleration(STS_ID, 254)
 
     # - set torque limit
     #bus.sram_set_torque_limit(STS_ID, 500)
@@ -180,9 +180,9 @@ if __name__ == "__main__":
     #       i.e. if motor is powered off, it will not record how many muliturns it made,
     #       but it will start from the current value of its encoder
     # in order to activate multiturn mode, the following 3 calls have to be made 
-    #bus.eeprom_set_mode(STS_ID, STS_MODE_POSITION)    
-    #bus.eeprom_set_angle_min(STS_ID, 0)
-    #bus.eeprom_set_angle_max(STS_ID, 0)
+    bus.eeprom_set_mode(STS_ID, STS_MODE_POSITION)    
+    bus.eeprom_set_angle_min(STS_ID, 0)
+    bus.eeprom_set_angle_max(STS_ID, 0)
     # then, motor can achieve multiturns with e.g.:
     #bus.sram_set_position(STS_ID, -1*4095)  # -1 full rotation
     #bus.sram_set_position(STS_ID, 1*4095)   # +1 full rotation
